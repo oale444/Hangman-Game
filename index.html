@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+ 
+</head>
+<body>
+                    <!-- ////List of my created IDs
+                             id#"words" (h1)
+                             id#"guess" (p)
+                             id#"wins"  (p)
+                             id#"lose"  (p)
+                             id#"wrong" (p)
+                             //// -->
+
+    <!-- Jumbotron Header -->
+    <div class="container">
+        <div class="jumbotron">
+                <h1 class="display-4">Let's play a game of Hangman!</h1>
+                     <br>
+                     <br>
+                <p><i>Guess the name of a fast food restaurant</i></p>
+                
+                <!-- horizontal line break -->
+                <hr class="my-4">
+                     <br>
+                     <br>
+                        <!-- this will display the word -->
+                    <h1 id="words">_ _ _ _ _ _ _ _ _ _ _ _ _ </h1> 
+                </p>
+        </div>
+    </div>
+            <!-- end of jumbotron -->
+    <!-- Guesses Left Panel/ first row -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-guess">Guesses left:</h3>
+                        <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                    </div>
+                    <div class="panel-body">
+                        <br>
+                        <br>
+                        <br>
+                        <!-- This will display the # of guesses left -->
+                    <p id="guess"> _ _ </p>
+                    </div>
+                </div>
+            </div>
+            <!-- Win Count Panel -->
+            <div class="col-md-6">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-wins">Win Counts:</h3>
+                        <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                    </div>
+                   <div class="panel-body">
+                        <br>
+                        <br>
+                        <br>
+                       <!-- This will display the # of wins -->
+                    <p id="win"> _ _</p>
+                  </div>
+            </div>
+        </div>
+        </div>
+                        <br>
+                        <br>
+                        <hr>
+            <!-- Lose Count Panel/ second row -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-lose">Lose Counts:</h3>
+                        <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                    </div>
+                    <div class="panel-body">
+                          <br>
+                          <br>
+                          <br>
+                        <!-- This will display the # of loses -->
+                    <p id="lose">_ _</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Wrong Guesses Panel -->
+            <div class="col-md-6">
+                <div class="panel panel-warning">
+                    <div class="panel-heading">
+                        <h3 class="panel-wrong">Wrong Guesses:</h3>
+                        <span class="pull-right clickable"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                    </div>
+                    <div class="panel-body">
+                           <br>
+                           <br>
+                           <br>
+                        <!-- This will display the # of wrong guesses -->
+                    <p id="wrong"> _ _</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Link to external javascript sheet -->
+<script src="assets/javascript/game.js">
+
+</script>
+</body>
+</html>
