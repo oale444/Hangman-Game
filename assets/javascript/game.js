@@ -65,7 +65,7 @@ function finishedRound() {
     console.log("Win Counts:"  + winCounts +  "| Loss Counts:" + loseCounts +  "| Guesses Left" + guessesLeft);
     
     document.getElementById("guess").innerHTML = guessesLeft;
-    document.getElementById("words").innerHTML = blanket.toString();
+    document.getElementById("words").innerHTML = blanket.toString()("_ _");
     document.getElementById("wrong").innerHTML = wrongGuesses(" ");
     
     if(lettersInside.toString() == blanket.toString()) {
